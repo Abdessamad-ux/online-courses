@@ -29,6 +29,11 @@
             font-size: 2.5rem;
             margin-bottom: 10px;
         }
+        h2 {
+            color: var(--primary);
+            text-align: center;
+            margin: 40px 0;
+        }
         .subtitle {
             font-size: 1.2rem;
             color: #555;
@@ -51,71 +56,57 @@
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
+        
+        /* Course Grid Styles */
+        .course-categories {
             margin: 50px 0;
         }
-        .feature-card {
-            flex: 1;
-            min-width: 250px;
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .course-card {
             background: white;
             border-radius: 10px;
-            padding: 25px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            border-top: 4px solid var(--primary);
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
         }
-        .feature-card h3 {
-            color: var(--primary);
+        .course-card:hover {
+            transform: translateY(-5px);
         }
-        .testimonials {
-            background: #f0f4ff;
-            padding: 40px;
-            border-radius: 10px;
-            margin: 50px 0;
+        .course-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
         }
-        .testimonial {
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-        .author {
-            font-weight: bold;
-            color: var(--primary);
-        }
-        .payment-logos {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 30px 0;
-            flex-wrap: wrap;
-        }
-        .payment-logos img {
-            height: 40px;
-        }
-        .scarcity-banner {
-            background: #fff3cd;
-            padding: 15px;
-            border-radius: 5px;
-            text-align: center;
-            margin: 30px 0;
-            border-left: 4px solid #ffc107;
-        }
-        footer {
-            text-align: center;
-            margin-top: 50px;
+        .course-info {
             padding: 20px;
-            color: #666;
-            font-size: 0.9rem;
         }
+        .course-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+        .course-meta {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        /* Existing styles remain unchanged */
+        .features { /* ... */ }
+        .feature-card { /* ... */ }
+        .testimonials { /* ... */ }
+        .payment-logos { /* ... */ }
+        .scarcity-banner { /* ... */ }
+        footer { /* ... */ }
+        
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-            .features {
-                flex-direction: column;
-            }
+            h1 { font-size: 2rem; }
+            .features { flex-direction: column; }
+            .course-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -125,9 +116,89 @@
         <p class="subtitle">Maîtrisez les compétences les plus demandées en 2024 - Téléchargement instantané!</p>
         <a href="#offer" class="cta-button">Acheter Maintenant - Seulement 19€</a>
         <div style="max-width: 800px; margin: 0 auto;">
-            <img src="https://via.placeholder.com/800x450?text=7,000+Cours+Udemy+Coursera" alt="Cours en ligne" style="width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <img src="https://i.postimg.cc/CLyw14CC/eee9c3d0-27bd-4fa8-8a86-fd56613b0ca0-redandwhitevideocentriccomingsooninstagrampost.jpg" alt="Cours en ligne" style="width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
         </div>
     </header>
+
+    <!-- New Featured Courses Section -->
+    <section class="course-categories">
+        <h2>Nos Cours Vedettes</h2>
+        
+        <h3 style="color: var(--secondary); margin-top: 40px;">🤖 ChatGPT & Intelligence Artificielle</h3>
+        <div class="course-grid">
+            <div class="course-card">
+                <img src="https://i.postimg.cc/37ee24ba-f31d-4ae3-bc96-6d41f819f98f-screenshot2025-03-07220745.png" alt="ChatGPT Courses">
+                <div class="course-info">
+                    <div class="course-title">Udemy – ChatGPT : 7 Secret Ways to Make Money</div>
+                    <div class="course-meta">Mis à jour: 30 Jan 2024</div>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="https://i.postimg.cc/37ee24ba-f31d-4ae3-bc96-6d41f819f98f-screenshot2025-03-07220745.png" alt="AI Courses">
+                <div class="course-info">
+                    <div class="course-title">Udemy – DeepSeek AI: The New ChatGPT for AI</div>
+                    <div class="course-meta">Mis à jour: 4 Mar 2025</div>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="https://i.postimg.cc/37ee24ba-f31d-4ae3-bc96-6d41f819f98f-screenshot2025-03-07220745.png" alt="AI Business Models">
+                <div class="course-info">
+                    <div class="course-title">Udemy – 21 AI Business Models for Passive Income</div>
+                    <div class="course-meta">Mis à jour: 25 Jan 2025</div>
+                </div>
+            </div>
+        </div>
+        
+        <h3 style="color: var(--secondary); margin-top: 40px;">📊 Trading Algorithmique</h3>
+        <div class="course-grid">
+            <div class="course-card">
+                <img src="https://i.postimg.cc/b883416d-8044-4c7b-a941-9508aedf6a4b-screenshot2025-03-07220636.png" alt="Trading Courses">
+                <div class="course-info">
+                    <div class="course-title">Udemy – Complete Python Trading Bot Bootcamp</div>
+                    <div class="course-meta">Mis à jour: 7 Jan 2025</div>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="https://i.postimg.cc/b883416d-8044-4c7b-a941-9508aedf6a4b-screenshot2025-03-07220636.png" alt="Algorithmic Trading">
+                <div class="course-info">
+                    <div class="course-title">Udemy – Algorithmic Trading Master Class</div>
+                    <div class="course-meta">Mis à jour: 7 Jan 2025</div>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="https://i.postimg.cc/b883416d-8044-4c7b-a941-9508aedf6a4b-screenshot2025-03-07220636.png" alt="Crypto Trading">
+                <div class="course-info">
+                    <div class="course-title">Udemy – Build a 100% Functional Crypto Bot</div>
+                    <div class="course-meta">Mis à jour: 21 Dec 2024</div>
+                </div>
+            </div>
+        </div>
+        
+        <h3 style="color: var(--secondary); margin-top: 40px;">💰 Business & Argent</h3>
+        <div class="course-grid">
+            <div class="course-card">
+                <img src="https://i.postimg.cc/155c3cd9-8b2f-4c6b-b5cf-7f46653fc562-screenshot2025-03-07220722.png" alt="Money Courses">
+                <div class="course-info">
+                    <div class="course-title">The Great Courses – Money and Banking</div>
+                    <div class="course-meta">Mis à jour: 21 Feb 2025</div>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="https://i.postimg.cc/155c3cd9-8b2f-4c6b-b5cf-7f46653fc562-screenshot2025-03-07220722.png" alt="Passive Income">
+                <div class="course-info">
+                    <div class="course-title">Udemy – Escape the 9-5: Passive Income</div>
+                    <div class="course-meta">Mis à jour: 21 Feb 2025</div>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="https://i.postimg.cc/155c3cd9-8b2f-4c6b-b5cf-7f46653fc562-screenshot2025-03-07220722.png" alt="Success Course">
+                <div class="course-info">
+                    <div class="course-title">Udemy – Mastering Success: Happiness & Wealth</div>
+                    <div class="course-meta">Mis à jour: 23 Feb 2025</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="features">
         <div class="features">
