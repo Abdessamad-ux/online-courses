@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7,000+ Cours Premium | Formation en Ligne</title>
+    <style>
+        /* Modern French-style design */
+        :root {
+            --primary: #4361ee; /* French blue */
+            --secondary: #f72585; /* Pink accent */
+            --dark: #212529;
+            --light: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin: 20px 0;
+            transition: all 0.3s;
+        }
+        .cta-button:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px 0;
+        }
+        .feature-card {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary);
+        }
+        .feature-card h3 {
+            color: var(--primary);
+        }
+        .testimonials {
+            background: #f0f4ff;
+            padding: 40px;
+            border-radius: 10px;
+            margin: 50px 0;
+        }
+        .testimonial {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .author {
+            font-weight: bold;
+            color: var(--primary);
+        }
+        .payment-logos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .payment-logos img {
+            height: 40px;
+        }
+        .scarcity-banner {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            margin: 30px 0;
+            border-left: 4px solid #ffc107;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .features {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🚀 Accédez à 7,000+ Cours Premium</h1>
+        <p class="subtitle">Maîtrisez les compétences les plus demandées en 2024 - Téléchargement instantané!</p>
+        <a href="#offer" class="cta-button">Acheter Maintenant - Seulement 19€</a>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <img src="https://via.placeholder.com/800x450?text=7,000+Cours+Udemy+Coursera" alt="Cours en ligne" style="width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+        </div>
+    </header>
+
+    <section id="features">
+        <div class="features">
+            <div class="feature-card">
+                <h3>💻 IT & Programmation</h3>
+                <p>Python, Cybersecurity, Développement Web, Data Science et plus encore.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📈 Marketing Digital</h3>
+                <p>SEO, Facebook Ads, Growth Hacking, Content Marketing et stratégies avancées.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🇫🇷 Langues</h3>
+                <p>Anglais professionnel, FLE (Français Langue Étrangère), Espagnol, Allemand.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🧘 Santé & Bien-être</h3>
+                <p>Yoga, Nutrition, Développement Personnel, Santé Mentale.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2 style="text-align: center; color: var(--primary);">Ce que disent nos étudiants</h2>
+        <div class="testimonial">
+            <p>"J'ai payé 200€ pour un seul cours avant de découvrir cette offre! La qualité est identique pour une fraction du prix."</p>
+            <p class="author">- Marie, Freelance en Marketing (Lyon)</p>
+        </div>
+        <div class="testimonial">
+            <p>"Les certifications m'ont aidé à décrocher un CDI dans une entreprise tech à Paris. Je recommande à 100%!"</p>
+            <p class="author">- Jean, Développeur Full-Stack</p>
+        </div>
+    </section>
+
+    <section id="offer" style="text-align: center;">
+        <div class="scarcity-banner">
+            <h3>⚠️ Offre Limitée: Seulement 50 packs disponibles à 19€!</h3>
+            <p>⏳ L'offre expire dans: <span id="countdown" style="font-weight: bold;">24:59:59</span></p>
+        </div>
+
+        <h2>Accès Immédiat à Tous les Cours</h2>
+        <p style="font-size: 1.2rem;">Téléchargez dès aujourd'hui et commencez à apprendre!</p>
+
+        <div class="payment-logos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Carte_Bleue_logo.svg" alt="Carte Bleue">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+        </div>
+
+        <a href="#payment" class="cta-button" style="background: var(--secondary);">👉 Obtenir Maintenant</a>
+
+        <div id="payment" style="margin-top: 50px; background: #f8f9fa; padding: 30px; border-radius: 10px;">
+            <h3>Paiement Sécurisé</h3>
+            <!-- Replace with your actual PayPal button code -->
+            <div style="margin: 20px auto; max-width: 300px;">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID">
+                    <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+                </form>
+            </div>
+            <p style="font-size: 0.8rem; color: #666;">* TVA non applicable, Article 293B du CGI</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Formations Premium. Ce pack est un complément éducatif, non affilié à Udemy/Coursera.</p>
+        <p><a href="#" style="color: #666;">Politique de confidentialité</a> | <a href="#" style="color: #666;">Conditions d'utilisation</a></p>
+    </footer>
+
+    <script>
+        // Countdown timer (24 hours)
+        function updateCountdown() {
+            const now = new Date();
+            const end = new Date();
+            end.setHours(23, 59, 59, 999);
+            
+            const diff = end - now;
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown').innerHTML = 
+                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
