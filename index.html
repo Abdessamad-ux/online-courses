@@ -31,16 +31,16 @@
         }
 
         .container {
-            max-width: 1280px;
+            max-width: 1440px; /* Increased for larger screens */
             margin: 0 auto;
-            padding: 0 24px;
+            padding: 0 16px; /* Reduced padding for smaller screens */
         }
 
         /* Header Styles */
         header {
             background: var(--gradient);
             color: white;
-            padding: 16px 0;
+            padding: 1rem 0;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -52,10 +52,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap; /* Allow wrapping on small screens */
         }
 
         .logo {
-            font-size: 32px;
+            font-size: clamp(1.5rem, 5vw, 2rem); /* Responsive font size */
             font-weight: 800;
             letter-spacing: -0.5px;
         }
@@ -67,11 +68,11 @@
         .cta-button {
             background: var(--accent);
             color: white;
-            padding: 12px 32px;
+            padding: 0.75rem 2rem;
             border-radius: 9999px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 16px;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             border: none;
             cursor: pointer;
@@ -85,7 +86,7 @@
 
         /* Hero Section */
         .hero {
-            padding: 120px 0;
+            padding: clamp(4rem, 15vw, 7.5rem) 0;
             background: url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
             position: relative;
             color: white;
@@ -110,17 +111,17 @@
         }
 
         .hero h1 {
-            font-size: 40px;
+            font-size: clamp(1.8rem, 5vw, 3rem);
             font-weight: 900;
             line-height: 1.2;
-            margin-bottom: 24px;
+            margin-bottom: 1.5rem;
             text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         }
 
         .hero p {
-            font-size: 22px;
+            font-size: clamp(1rem, 3vw, 1.375rem);
             font-weight: 300;
-            margin-bottom: 32px;
+            margin-bottom: 2rem;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
@@ -128,43 +129,44 @@
 
         .countdown {
             background: rgba(255, 255, 255, 0.15);
-            padding: 24px;
+            padding: 1.5rem;
             border-radius: 12px;
-            margin: 32px auto;
+            margin: 2rem auto;
             max-width: 600px;
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 1.25rem;
             font-weight: 500;
-            font-size: 18px;
+            font-size: clamp(0.9rem, 2.5vw, 1.125rem);
             backdrop-filter: blur(4px);
         }
 
-        .countdown span {
-            font-weight: 700;
-            color: var(--accent);
+        .countdown iframe {
+            width: 100%;
+            max-width: 560px;
+            aspect-ratio: 16 / 9; /* Maintain video aspect ratio */
         }
 
         /* Section Styles */
         .section {
-            padding: 80px 0;
+            padding: clamp(3rem, 10vw, 5rem) 0;
         }
 
         .section-title {
             text-align: center;
-            margin-bottom: 64px;
+            margin-bottom: 4rem;
         }
 
         .section-title h2 {
-            font-size: 44px;
+            font-size: clamp(1.8rem, 5vw, 2.75rem);
             font-weight: 800;
             color: var(--primary);
-            margin-bottom: 16px;
+            margin-bottom: 1rem;
             letter-spacing: -1px;
         }
 
         .section-title p {
-            font-size: 20px;
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
             color: #4B5563;
             max-width: 800px;
             margin: 0 auto;
@@ -172,14 +174,14 @@
 
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 32px;
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+            gap: 2rem;
         }
 
         .feature-card {
             background: white;
             border-radius: 16px;
-            padding: 32px;
+            padding: 2rem;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -190,21 +192,21 @@
         }
 
         .feature-card i {
-            font-size: 48px;
+            font-size: clamp(2rem, 5vw, 3rem);
             color: var(--primary);
-            margin-bottom: 24px;
+            margin-bottom: 1.5rem;
             display: inline-block;
         }
 
         .feature-card h3 {
-            font-size: 24px;
+            font-size: clamp(1.25rem, 3vw, 1.5rem);
             font-weight: 700;
-            margin-bottom: 16px;
+            margin-bottom: 1rem;
             color: var(--dark);
         }
 
         .feature-card p {
-            font-size: 16px;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
             color: #6B7280;
         }
 
@@ -212,12 +214,14 @@
         .ebook-section {
             display: flex;
             align-items: center;
-            gap: 48px;
-            margin-bottom: 80px;
+            gap: 3rem;
+            margin-bottom: 5rem;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
         }
 
         .ebook-mockup {
             flex: 1;
+            min-width: 280px; /* Prevent image from shrinking too much */
         }
 
         .ebook-mockup img {
@@ -235,12 +239,13 @@
 
         .ebook-content {
             flex: 1;
+            min-width: 280px;
         }
 
         .ebook-content h3 {
-            font-size: 32px;
+            font-size: clamp(1.5rem, 4vw, 2rem);
             font-weight: 700;
-            margin-bottom: 24px;
+            margin-bottom: 1.5rem;
             color: var(--primary);
         }
 
@@ -249,14 +254,14 @@
         }
 
         .chapter-list li {
-            padding: 16px;
-            margin-bottom: 12px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
             background: white;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
             font-weight: 500;
             position: relative;
-            padding-left: 56px;
+            padding-left: 3.5rem;
             transition: all 0.3s ease;
         }
 
@@ -267,11 +272,11 @@
         .chapter-list li::before {
             content: '';
             position: absolute;
-            left: 16px;
+            left: 1rem;
             top: 50%;
             transform: translateY(-50%);
-            width: 32px;
-            height: 32px;
+            width: 2rem;
+            height: 2rem;
             background: var(--accent);
             border-radius: 50%;
             display: flex;
@@ -279,7 +284,7 @@
             justify-content: center;
             color: white;
             font-weight: 700;
-            font-size: 16px;
+            font-size: clamp(0.9rem, 2vw, 1rem);
         }
 
         .chapter-list li:nth-child(1)::before { content: '1'; }
@@ -304,14 +309,14 @@
 
         .pricing-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 32px;
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+            gap: 2rem;
         }
 
         .pricing-card {
             background: white;
             border-radius: 16px;
-            padding: 40px;
+            padding: 2.5rem;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
             text-align: center;
             position: relative;
@@ -330,51 +335,51 @@
 
         .popular-tag {
             position: absolute;
-            top: -16px;
-            right: 24px;
+            top: -1rem;
+            right: 1.5rem;
             background: var(--accent);
             color: white;
-            padding: 8px 16px;
+            padding: 0.5rem 1rem;
             border-radius: 9999px;
-            font-size: 14px;
+            font-size: clamp(0.8rem, 2vw, 0.875rem);
             font-weight: 600;
         }
 
         .pricing-card h3 {
-            font-size: 28px;
+            font-size: clamp(1.5rem, 3.5vw, 1.75rem);
             font-weight: 700;
-            margin-bottom: 16px;
+            margin-bottom: 1rem;
             color: var(--dark);
         }
 
         .price {
-            font-size: 52px;
+            font-size: clamp(2rem, 6vw, 3.25rem);
             font-weight: 800;
             color: var(--primary);
-            margin-bottom: 24px;
+            margin-bottom: 1.5rem;
         }
 
         .price span {
-            font-size: 18px;
+            font-size: clamp(0.9rem, 2.5vw, 1.125rem);
             font-weight: 400;
             color: #6B7280;
             display: block;
-            margin-top: 8px;
+            margin-top: 0.5rem;
         }
 
         .pricing-features {
             list-style: none;
-            margin-bottom: 32px;
+            margin-bottom: 2rem;
         }
 
         .pricing-features li {
-            padding: 12px 0;
-            font-size: 16px;
+            padding: 0.75rem 0;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
             color: #4B5563;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
+            gap: 0.5rem;
         }
 
         .pricing-features li i.fa-check {
@@ -388,34 +393,34 @@
         /* Testimonials */
         .testimonials {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 32px;
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+            gap: 2rem;
         }
 
         .testimonial-card {
             background: white;
             border-radius: 16px;
-            padding: 32px;
+            padding: 2rem;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
             position: relative;
         }
 
         .testimonial-card .quote {
             font-style: italic;
-            font-size: 16px;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
             color: #4B5563;
-            margin-bottom: 24px;
+            margin-bottom: 1.5rem;
             line-height: 1.6;
         }
 
         .testimonial-card .quote::before {
             content: '"';
-            font-size: 80px;
+            font-size: clamp(3rem, 10vw, 5rem);
             color: var(--primary);
             opacity: 0.15;
             position: absolute;
-            top: -20px;
-            left: 8px;
+            top: -1.25rem;
+            left: 0.5rem;
         }
 
         .author {
@@ -424,22 +429,22 @@
         }
 
         .author img {
-            width: 56px;
-            height: 56px;
+            width: clamp(2.5rem, 10vw, 3.5rem);
+            height: clamp(2.5rem, 10vw, 3.5rem);
             border-radius: 50%;
-            margin-right: 16px;
+            margin-right: 1rem;
             object-fit: cover;
             border: 2px solid var(--primary);
         }
 
         .author-info h4 {
-            font-size: 20px;
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
             font-weight: 600;
-            margin-bottom: 4px;
+            margin-bottom: 0.25rem;
         }
 
         .author-info p {
-            font-size: 14px;
+            font-size: clamp(0.8rem, 2vw, 0.875rem);
             color: #6B7280;
         }
 
@@ -450,7 +455,7 @@
         }
 
         .faq-item {
-            margin-bottom: 16px;
+            margin-bottom: 1rem;
             border: 1px solid #E5E7EB;
             border-radius: 12px;
             overflow: hidden;
@@ -458,9 +463,9 @@
         }
 
         .faq-question {
-            padding: 24px;
+            padding: 1.5rem;
             font-weight: 600;
-            font-size: 18px;
+            font-size: clamp(0.9rem, 2.5vw, 1.125rem);
             cursor: pointer;
             display: flex;
             justify-content: space-between;
@@ -481,7 +486,7 @@
         }
 
         .faq-answer {
-            padding: 0 24px;
+            padding: 0 1.5rem;
             max-height: 0;
             overflow: hidden;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -489,12 +494,12 @@
         }
 
         .faq-item.active .faq-answer {
-            padding: 24px;
+            padding: 1.5rem;
             max-height: 300px;
         }
 
         .faq-answer p {
-            font-size: 16px;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
             color: #4B5563;
         }
 
@@ -502,30 +507,30 @@
         .profit-example {
             background: white;
             border-radius: 16px;
-            padding: 48px;
-            margin: 48px auto;
+            padding: clamp(2rem, 5vw, 3rem);
+            margin: 3rem auto;
             max-width: 900px;
             box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
             text-align: center;
         }
 
         .profit-example h3 {
-            font-size: 32px;
+            font-size: clamp(1.5rem, 4vw, 2rem);
             font-weight: 700;
             color: var(--primary);
-            margin-bottom: 24px;
+            margin-bottom: 1.5rem;
         }
 
         .profit-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-            margin: 32px 0;
+            grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
         }
 
         .profit-item {
             background: #F3F4F6;
-            padding: 24px;
+            padding: 1.5rem;
             border-radius: 12px;
             transition: all 0.3s ease;
         }
@@ -535,43 +540,43 @@
         }
 
         .profit-item h4 {
-            font-size: 18px;
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
             font-weight: 600;
             color: var(--secondary);
-            margin-bottom: 12px;
+            margin-bottom: 0.75rem;
         }
 
         .profit-item p {
-            font-size: 28px;
+            font-size: clamp(1.25rem, 3.5vw, 1.75rem);
             font-weight: 700;
             color: var(--accent);
         }
 
         .profit-total {
-            font-size: 36px;
+            font-size: clamp(1.5rem, 5vw, 2.25rem);
             font-weight: 800;
             color: var(--success);
-            margin: 24px 0;
+            margin: 1.5rem 0;
         }
 
         /* Footer */
         footer {
             background: var(--dark);
             color: white;
-            padding: 80px 0 32px;
+            padding: clamp(3rem, 10vw, 5rem) 0 2rem;
         }
 
         .footer-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 48px;
-            margin-bottom: 48px;
+            grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
         }
 
         .footer-column h3 {
-            font-size: 24px;
+            font-size: clamp(1.25rem, 3vw, 1.5rem);
             font-weight: 700;
-            margin-bottom: 24px;
+            margin-bottom: 1.5rem;
             color: var(--light);
         }
 
@@ -580,13 +585,13 @@
         }
 
         .footer-column ul li {
-            margin-bottom: 12px;
+            margin-bottom: 0.75rem;
         }
 
         .footer-column ul li a {
             color: #9CA3AF;
             text-decoration: none;
-            font-size: 16px;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
             transition: color 0.3s ease;
         }
 
@@ -595,34 +600,40 @@
         }
 
         .footer-column ul li a i {
-            margin-right: 8px;
+            margin-right: 0.5rem;
         }
 
         .copyright {
             text-align: center;
-            padding-top: 32px;
+            padding-top: 2rem;
             border-top: 1px solid #4B5563;
             color: #9CA3AF;
-            font-size: 14px;
+            font-size: clamp(0.8rem, 2vw, 0.875rem);
         }
 
-        /* Responsive Adjustments */
+        /* Enhanced Responsive Adjustments */
+        @media (max-width: 1280px) {
+            .container {
+                max-width: 1000px;
+            }
+        }
+
         @media (max-width: 1024px) {
             .hero h1 {
-                font-size: 48px;
+                font-size: clamp(1.5rem, 4.5vw, 2.5rem);
             }
 
             .hero p {
-                font-size: 20px;
+                font-size: clamp(0.9rem, 2.5vw, 1.125rem);
             }
 
             .section-title h2 {
-                font-size: 36px;
+                font-size: clamp(1.5rem, 4vw, 2.25rem);
             }
 
             .ebook-section {
                 flex-direction: column;
-                gap: 32px;
+                gap: 2rem;
             }
 
             .ebook-mockup, .ebook-content {
@@ -635,25 +646,100 @@
         }
 
         @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
             .hero h1 {
-                font-size: 36px;
+                font-size: clamp(1.25rem, 4vw, 2rem);
             }
 
             .hero p {
-                font-size: 18px;
-            }
-
-            .section-title h2 {
-                font-size: 32px;
+                font-size: clamp(0.875rem, 2.5vw, 1rem);
             }
 
             .countdown {
                 flex-direction: column;
-                gap: 12px;
+                gap: 0.75rem;
             }
 
             .pricing-card.popular {
                 transform: scale(1);
+            }
+
+            .pricing-card {
+                padding: 1.5rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 0 12px;
+            }
+
+            .logo {
+                font-size: clamp(1.25rem, 4vw, 1.5rem);
+            }
+
+            .cta-button {
+                padding: 0.5rem 1.5rem;
+                font-size: clamp(0.8rem, 2vw, 0.9rem);
+            }
+
+            .hero {
+                padding: 3rem 0;
+            }
+
+            .section {
+                padding: 2rem 0;
+            }
+
+            .section-title h2 {
+                font-size: clamp(1.25rem, 3.5vw, 1.75rem);
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-question {
+                font-size: clamp(0.8rem, 2vw, 0.9rem);
+            }
+
+            .profit-example {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .container {
+                padding: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: clamp(1rem, 3.5vw, 1.5rem);
+            }
+
+            .section-title h2 {
+                font-size: clamp(1rem, 3vw, 1.5rem);
+            }
+
+            .ebook-mockup img {
+                transform: none; /* Disable 3D effect on very small screens */
             }
         }
     </style>
@@ -671,28 +757,20 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Master Reselling Instagram & TikTok Followers, Likes and Views in 2025</h1>
-            
             <a href="#pricing" class="cta-button">Get Started Today</a>
-            
             <div class="countdown" id="countdown">
-    <p>🚀 Make $100 a Day by Reselling Followers</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/eyL2ZunfD8k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+                <p>🚀 Make $100 a Day by Reselling Followers</p>
+                <iframe src="https://www.youtube.com/embed/eyL2ZunfD8k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
     </section>
     
     <!-- Instagram Followers Reselling Section -->
     <section class="section">
         <div class="container">
-            <!-- <div class="section-title">
-                <h2>🚀 Make $100 a Day by Reselling Instagram Followers</h2>
-                <p>The Complete Guide to Starting and Making Money with Social Media Services</p>
-            </div> -->
-            
             <div class="profit-example">
                 <h3>Real Profit Example</h3>
                 <p>Learn how to build a high-profit business with up to 95% profit margins, even with a low budget in startup costs!</p>
-                
                 <div class="profit-grid">
                     <div class="profit-item">
                         <h4>Offer</h4>
@@ -707,58 +785,12 @@
                         <p>$14</p>
                     </div>
                 </div>
-                
                 <div class="profit-total">
                     Your Profit: $49.99 - $14 = $35.99 per sale
                 </div>
-                
-                <!-- <p>Just 3 sales per day = $107 daily profit!</p> -->
             </div>
-            
-            <!-- <div class="features">
-                <div class="feature-card">
-                    <i class="fas fa-search-dollar"></i>
-                    <h3>Source & Resell</h3>
-                    <p>Find out where and how to buy services (followers, likes, views) at cheap prices and resell them for high profits</p>
-                </div>
-                
-                <div class="feature-card">
-                    <i class="fas fa-globe"></i>
-                    <h3>Professional Website</h3>
-                    <p>Create a professional website with payment methods (100% free setup)</p>
-                </div>
-                
-                <div class="feature-card">
-                    <i class="fas fa-ad"></i>
-                    <h3>Paid Traffic</h3>
-                    <p>Access paid traffic starting at just $1 (with high conversion strategies)</p>
-                </div>
-                
-                <div class="feature-card">
-                    <i class="fas fa-map-marked-alt"></i>
-                    <h3>Target Markets</h3>
-                    <p>Discover the best countries to sell your services in for maximum profits</p>
-                </div>
-                
-                <div class="feature-card">
-                    <i class="fas fa-comments"></i>
-                    <h3>Sales Conversion</h3>
-                    <p>Learn how to talk to customers and convince them to buy from you</p>
-                </div>
-                
-                <div class="feature-card">
-                    <i class="fas fa-paint-brush"></i>
-                    <h3>Professional Designs</h3>
-                    <p>Design professional posts using Canva (free account setup)</p>
-                </div>
-            </div> -->
-            
             <div class="profit-example" style="background-color: #F0F8FF;">
-                <h3>🔥 Just 3 sales per day = $107 daily profit!
-
-</h3>
-                <!-- <p>Use free traffic and keep up to 95% of your earnings!</p>
-                <p>The 5% discount only applies to the service purchase price — you control the resale price and the profit you make!</p> -->
+                <h3>🔥 Just 3 sales per day = $107 daily profit!</h3>
             </div>
         </div>
     </section>
@@ -766,11 +798,6 @@
     <!-- Course Description -->
     <section class="section">
         <div class="container">
-            <div class="section-title">
-                <!-- <h2>Turn Social Media Into Your Personal ATM</h2>
-                <p>Ready to tap into the booming social media services industry and start earning $100+/day — even with zero experience?</p>
-            --> </div> 
-            
             <div class="ebook-section">
                 <div class="ebook-mockup">
                     <img src="https://i.postimg.cc/zG13WxZJ/1749594663.png" alt="Social Media Reselling Ebook">
@@ -791,24 +818,20 @@
                         <li>Achieve 90% Profit Using Free Traffic</li>
                         <li>Understand the 10% Discount on Service Purchase Prices</li>
                         <li>Resell Services at Your Desired Price After Purchase</li>
-                        
                     </ul>
                 </div>
             </div>
-            
             <div class="features">
                 <div class="feature-card">
                     <i class="fas fa-rocket"></i>
                     <h3>Proven Business Model</h3>
                     <p>Learn how this business model works and why it's still highly profitable in 2025 with real case studies.</p>
                 </div>
-                
                 <div class="feature-card">
                     <i class="fas fa-cogs"></i>
                     <h3>Complete Setup Guide</h3>
                     <p>From finding reliable providers to creating your professional reselling website - we cover everything.</p>
                 </div>
-                
                 <div class="feature-card">
                     <i class="fas fa-chart-line"></i>
                     <h3>Traffic & Sales</h3>
@@ -825,38 +848,32 @@
                 <h2>What You'll Learn</h2>
                 <p>This comprehensive course covers everything you need to launch and scale your social media reselling business</p>
             </div>
-            
             <div class="features">
                 <div class="feature-card">
                     <i class="fas fa-lightbulb"></i>
                     <h3>Business Fundamentals</h3>
                     <p>How this business model works (And why it still works in 2025), finding cheap & reliable providers, pricing strategies.</p>
                 </div>
-                
                 <div class="feature-card">
                     <i class="fas fa-globe"></i>
                     <h3>Website Creation</h3>
                     <p>How to create a professional reselling website 100% FREE with our templates and step-by-step guides.</p>
                 </div>
-                
                 <div class="feature-card">
                     <i class="fas fa-bullseye"></i>
                     <h3>Client Acquisition</h3>
                     <p>Free traffic methods (Instagram, TikTok, Reddit, SEO) and paid traffic (Facebook/IG Ads, Google Ads, Influencers).</p>
                 </div>
-                
                 <div class="feature-card">
                     <i class="fas fa-cog"></i>
                     <h3>Operations</h3>
                     <p>How to handle orders, deliver services, keep customers happy, and withdraw your profits easily.</p>
                 </div>
-                
                 <div class="feature-card">
                     <i class="fas fa-level-up-alt"></i>
                     <h3>Scaling Up</h3>
                     <p>Advanced strategies to grow to $1,000+/month fast with real case studies and bonus scaling tips.</p>
                 </div>
-                
                 <div class="feature-card">
                     <i class="fas fa-gift"></i>
                     <h3>Bonus Materials</h3>
@@ -873,7 +890,6 @@
                 <h2>Choose Your Plan</h2>
                 <p>Select the package that fits your needs and start your reselling business today</p>
             </div>
-            
             <div class="pricing-cards">
                 <div class="pricing-card">
                     <h3>Starter</h3>
@@ -889,7 +905,6 @@
                     </ul>
                     <a href="https://www.paypal.com/ncp/payment/EW9TU59ENQ82A" class="cta-button">Get Started</a>
                 </div>
-                
                 <div class="pricing-card popular">
                     <div class="popular-tag">MOST POPULAR</div>
                     <h3>Premium</h3>
@@ -905,7 +920,6 @@
                     </ul>
                     <a href="https://www.paypal.com/ncp/payment/EG6B3JTDBSUGG" class="cta-button">Get Premium</a>
                 </div>
-                
                 <div class="pricing-card">
                     <h3>VIP</h3>
                     <div class="price">$249.99 <span>one-time payment</span></div>
@@ -931,7 +945,6 @@
                 <h2>Success Stories</h2>
                 <p>Hear from our students who've transformed their income with this system</p>
             </div>
-            
             <div class="testimonials">
                 <div class="testimonial-card">
                     <div class="quote">
@@ -945,7 +958,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="testimonial-card">
                     <div class="quote">
                         "The VIP package was worth every penny. Having my store set up for me saved me weeks of trial and error. I made back my investment in the first 3 days!"
@@ -958,7 +970,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="testimonial-card">
                     <div class="quote">
                         "I was skeptical at first but the traffic methods actually work. I'm getting 10-15 orders daily just from TikTok without spending a dime on ads. This course is gold!"
@@ -982,7 +993,6 @@
                 <h2>Frequently Asked Questions</h2>
                 <p>Everything you need to know before getting started</p>
             </div>
-            
             <div class="faq">
                 <div class="faq-item">
                     <div class="faq-question">
@@ -993,7 +1003,6 @@
                         <p>Absolutely not! This course is designed for complete beginners. We'll walk you through every step from setting up your business to making your first sales.</p>
                     </div>
                 </div>
-                
                 <div class="faq-item">
                     <div class="faq-question">
                         <span>How soon can I expect to make money?</span>
@@ -1003,7 +1012,6 @@
                         <p>Many of our students make their first sale within 48 hours of completing the course. With consistent implementation, most reach $100/day within 2-4 days</p>
                     </div>
                 </div>
-                
                 <div class="faq-item">
                     <div class="faq-question">
                         <span>Is this business still profitable in 2025?</span>
@@ -1013,7 +1021,6 @@
                         <p>Yes! The demand for social media growth services continues to increase. We've updated all strategies to work with 2025 algorithms and platform changes.</p>
                     </div>
                 </div>
-                
                 <div class="faq-item">
                     <div class="faq-question">
                         <span>What payment methods do you accept?</span>
@@ -1023,7 +1030,6 @@
                         <p>We accept all major credit cards, PayPal, and cryptocurrency. Your purchase is 100% secure.</p>
                     </div>
                 </div>
-                
                 <div class="faq-item">
                     <div class="faq-question">
                         <span>Is there a money-back guarantee?</span>
@@ -1040,9 +1046,9 @@
     <!-- CTA Section -->
     <section class="section" style="background: var(--gradient); color: white; text-align: center;">
         <div class="container">
-            <h2 style="font-size: 44px; font-weight: 800; margin-bottom: 24px;">Ready to Start Your Social Media Reselling Business?</h2>
-            <p style="font-size: 22px; font-weight: 300; margin-bottom: 32px; max-width: 800px; margin-left: auto; margin-right: auto;">Join thousands of students who are now making money online with this proven system. Enroll today and get instant access!</p>
-            <a href="#pricing" class="cta-button" style="background: var(--accent); font-size: 18px; padding: 16px 48px;">Get Instant Access Now</a>
+            <h2 style="font-size: clamp(1.8rem, 5vw, 2.75rem); font-weight: 800; margin-bottom: 1.5rem;">Ready to Start Your Social Media Reselling Business?</h2>
+            <p style="font-size: clamp(1rem, 3vw, 1.375rem); font-weight: 300; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">Join thousands of students who are now making money online with this proven system. Enroll today and get instant access!</p>
+            <a href="#pricing" class="cta-button" style="background: var(--accent); font-size: clamp(0.9rem, 2.5vw, 1.125rem); padding: 1rem 3rem;">Get Instant Access Now</a>
         </div>
     </section>
     
@@ -1054,33 +1060,25 @@
                     <h3>Anezom Courses Online</h3>
                     <p>Teaching beginners how to build profitable online businesses since 2022. Over 200 students served worldwide.</p>
                 </div>
-                
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul>
-                        
                         <li><a href="#pricing">Pricing</a></li>
-                        
                     </ul>
                 </div>
-                
                 <div class="footer-column">
                     <h3>Support</h3>
                     <ul>
                         <li><a href="https://wa.me/31637630250">Contact Us</a></li>
-                       
                     </ul>
                 </div>
-                
                 <div class="footer-column">
                     <h3>Follow Us</h3>
                     <ul>
                         <li><a href="https://www.instagram.com/anezom.1/"><i class="fab fa-instagram"></i> Instagram</a></li>
-                        
                     </ul>
                 </div>
             </div>
-            
             <div class="copyright">
                 <p>© 2025 Anezom All Rights Reserved.</p>
             </div>
@@ -1128,7 +1126,7 @@
                 const timeLeft = endDate - now;
                 
                 if (timeLeft <= 0) {
-                    document.getElementById('timer').textContent = 'Expired';
+                    document.getElementById('timer')?.textContent = 'Expired';
                     return;
                 }
                 
@@ -1136,7 +1134,7 @@
                 const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
                 
-                document.getElementById('timer').textContent = 
+                document.getElementById('timer')?.textContent = 
                     `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
             }
             
