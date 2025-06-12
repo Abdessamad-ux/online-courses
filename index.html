@@ -3,918 +3,1147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy Robux | Roblox</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Master Reselling Instagram & TikTok Services | 2025 Blueprint</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         :root {
-            --roblox-blue: #00a2ff;
-            --roblox-dark-blue: #0066b3;
-            --roblox-orange: #ff9500;
-            --roblox-dark-orange: #e68600;
-            --roblox-gray: #f8f9fa;
-            --roblox-dark-gray: #e9ecef;
-            --roblox-text: #212529;
-            --roblox-light-text: #6c757d;
-            --roblox-border: #dee2e6;
+            --primary: #5B21B6;
+            --secondary: #7C3AED;
+            --accent: #EC4899;
+            --light: #F9FAFB;
+            --dark: #1F2937;
+            --success: #06B6D4;
+            --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Roboto', Arial, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
         }
-        
+
         body {
-            background-color: #f8f9fa;
-            color: var(--roblox-text);
-            line-height: 1.5;
+            line-height: 1.7;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
         }
-        
-        /* Header/Navbar */
-        .navbar {
-            background-color: white;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            padding: 12px 0;
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header Styles */
+        header {
+            background: var(--gradient);
+            color: white;
+            padding: 16px 0;
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(8px);
         }
-        
-        .nav-container {
-            width: 95%;
-            max-width: 1400px;
-            margin: 0 auto;
+
+        .header-content {
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        
-        .nav-left {
-            display: flex;
             align-items: center;
-            gap: 15px;
-            order: 1;
         }
-        
+
         .logo {
-            height: 36px;
-            max-width: 100%;
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
         }
-        
-        .nav-links {
-            display: none;
+
+        .logo span {
+            color: var(--accent);
         }
-        
-        .nav-links a {
-            text-decoration: none;
-            color: var(--roblox-text);
-            font-weight: 500;
-            font-size: 15px;
-            transition: color 0.2s;
-        }
-        
-        .nav-links a:hover {
-            color: var(--roblox-blue);
-        }
-        
-        .nav-search {
-            order: 3;
-            width: 100%;
-            margin: 15px 0 0 0;
-            position: relative;
-        }
-        
-        .nav-search input {
-            width: 100%;
-            padding: 10px 15px 10px 40px;
-            border: 1px solid var(--roblox-border);
-            border-radius: 4px;
-            font-size: 14px;
-            background-color: #f1f3f5;
-        }
-        
-        .nav-search i {
-            position: absolute;
-            left: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--roblox-light-text);
-        }
-        
-        .nav-right {
-            display: flex;
-            gap: 10px;
-            order: 2;
-            margin-left: auto;
-        }
-        
-        .nav-btn {
-            padding: 8px 12px;
-            border-radius: 4px;
-            font-weight: 500;
-            font-size: 14px;
-            text-decoration: none;
-            transition: all 0.2s;
-            white-space: nowrap;
-        }
-        
-        .btn-login {
-            color: var(--roblox-text);
-            background-color: transparent;
-        }
-        
-        .btn-login:hover {
-            background-color: #f1f3f5;
-        }
-        
-        .btn-signup {
+
+        .cta-button {
+            background: var(--accent);
             color: white;
-            background-color: var(--roblox-blue);
-        }
-        
-        .btn-signup:hover {
-            background-color: var(--roblox-dark-blue);
-        }
-        
-        /* Mobile menu toggle */
-        .mobile-menu-toggle {
-            display: none;
-            background: none;
+            padding: 12px 32px;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             border: none;
-            font-size: 20px;
-            color: var(--roblox-text);
             cursor: pointer;
-            padding: 5px;
         }
-        
-        /* Main Content */
-        .main-container {
-            width: 95%;
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 0 10px;
+
+        .cta-button:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 8px 24px rgba(236, 72, 153, 0.4);
+            background: #DB2777;
         }
-        
+
+        /* Hero Section */
         .hero {
-            text-align: center;
-            margin-bottom: 30px;
-            padding: 0 10px;
-        }
-        
-        .hero h1 {
-            font-size: 28px;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: var(--roblox-text);
-            line-height: 1.3;
-        }
-        
-        .hero p {
-            font-size: 16px;
-            color: var(--roblox-light-text);
-        }
-        
-        /* Pricing Table */
-        .pricing-table {
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            margin-bottom: 25px;
-        }
-        
-        .table-header {
-            display: none;
-        }
-        
-        .table-row {
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-            border-bottom: 1px solid var(--roblox-border);
-            gap: 15px;
-        }
-        
-        .table-row:last-child {
-            border-bottom: none;
-        }
-        
-        .col-price, .col-mobile, .col-web {
-            width: 100%;
-            text-align: left;
-        }
-        
-        .col-price {
-            font-weight: 700;
-            font-size: 18px;
-        }
-        
-        .col-mobile::before {
-            content: "Mobile & console: ";
-            font-weight: 500;
-            color: var(--roblox-text);
-        }
-        
-        .col-web::before {
-            content: "Web & gift cards: ";
-            font-weight: 500;
-            color: var(--roblox-text);
-        }
-        
-        .robux-amount {
-            display: inline-flex;
-            align-items: center;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        
-        .robux-amount:hover {
-            color: var(--roblox-blue);
-        }
-        
-        .robux-icon {
-            width: 18px;
-            height: 18px;
-            margin-right: 5px;
-        }
-        
-        .web-option {
-            display: inline-block;
-            padding: 8px 12px;
-            background-color: var(--roblox-gray);
-            border-radius: 6px;
-            border: 1px solid var(--roblox-border);
-            margin-top: 5px;
-        }
-        
-        .bonus-badge {
-            display: inline-block;
-            background-color: #fff4d6;
-            color: #805500;
-            padding: 4px 8px;
-            border-radius: 20px;
-            font-size: 12px;
-            margin-left: 8px;
-            font-weight: 500;
-        }
-        
-        /* Premium Section */
-        .premium-card {
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-bottom: 25px;
-        }
-        
-        .premium-header {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-        
-        .premium-title {
-            font-size: 22px;
-            font-weight: 700;
-            color: var(--roblox-orange);
-        }
-        
-        .premium-price {
-            font-size: 18px;
-            font-weight: 700;
-        }
-        
-        .premium-desc {
-            margin-bottom: 15px;
-            color: var(--roblox-light-text);
-            font-size: 15px;
-        }
-        
-        .premium-features {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-        
-        .feature-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 14px;
-        }
-        
-        .feature-icon {
-            color: var(--roblox-orange);
-            font-size: 16px;
-            min-width: 20px;
-        }
-        
-        .btn-premium {
-            display: block;
-            width: 100%;
-            padding: 12px;
-            background-color: var(--roblox-orange);
+            padding: 120px 0;
+            background: url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            position: relative;
             color: white;
-            border: none;
-            border-radius: 6px;
-            font-weight: 700;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.2s;
+            text-align: center;
         }
-        
-        .btn-premium:hover {
-            background-color: var(--roblox-dark-orange);
-        }
-        
-        /* Content Locker Modal */
-        .content-locker-modal {
-            display: none;
-            position: fixed;
+
+        .hero::before {
+            content: '';
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            z-index: 2000;
+            background: rgba(0, 0, 0, 0.75);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero p {
+            font-size: 22px;
+            font-weight: 300;
+            margin-bottom: 32px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .countdown {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 24px;
+            border-radius: 12px;
+            margin: 32px auto;
+            max-width: 600px;
+            display: flex;
             justify-content: center;
+            gap: 20px;
+            font-weight: 500;
+            font-size: 18px;
+            backdrop-filter: blur(4px);
+        }
+
+        .countdown span {
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .section-title h2 {
+            font-size: 44px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .section-title p {
+            font-size: 20px;
+            color: #4B5563;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-card i {
+            font-size: 48px;
+            color: var(--primary);
+            margin-bottom: 24px;
+            display: inline-block;
+        }
+
+        .feature-card h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--dark);
+        }
+
+        .feature-card p {
+            font-size: 16px;
+            color: #6B7280;
+        }
+
+        /* Ebook Section */
+        .ebook-section {
+            display: flex;
+            align-items: center;
+            gap: 48px;
+            margin-bottom: 80px;
+        }
+
+        .ebook-mockup {
+            flex: 1;
+        }
+
+        .ebook-mockup img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+            transform: perspective(1000px) rotateY(-10deg);
+            transition: transform 0.5s ease;
+        }
+
+        .ebook-mockup img:hover {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+
+        .ebook-content {
+            flex: 1;
+        }
+
+        .ebook-content h3 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: var(--primary);
+        }
+
+        .chapter-list {
+            list-style: none;
+        }
+
+        .chapter-list li {
+            padding: 16px;
+            margin-bottom: 12px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            font-weight: 500;
+            position: relative;
+            padding-left: 56px;
+            transition: all 0.3s ease;
+        }
+
+        .chapter-list li:hover {
+            background: #F3F4F6;
+        }
+
+        .chapter-list li::before {
+            content: '';
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 32px;
+            height: 32px;
+            background: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .chapter-list li:nth-child(1)::before { content: '1'; }
+        .chapter-list li:nth-child(2)::before { content: '2'; }
+        .chapter-list li:nth-child(3)::before { content: '3'; }
+        .chapter-list li:nth-child(4)::before { content: '4'; }
+        .chapter-list li:nth-child(5)::before { content: '5'; }
+        .chapter-list li:nth-child(6)::before { content: '6'; }
+        .chapter-list li:nth-child(7)::before { content: '7'; }
+        .chapter-list li:nth-child(8)::before { content: '8'; }
+        .chapter-list li:nth-child(9)::before { content: '9'; }
+        .chapter-list li:nth-child(10)::before { content: '10'; }
+        .chapter-list li:nth-child(11)::before { content: '11'; }
+        .chapter-list li:nth-child(12)::before { content: '12'; }
+        .chapter-list li:nth-child(13)::before { content: '13'; }
+        .chapter-list li:nth-child(14)::before { content: '14'; }
+
+        /* Pricing Section */
+        .pricing {
+            background: #F3F4F6;
+        }
+
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            position: relative;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .pricing-card.popular {
+            border: 3px solid var(--accent);
+            transform: scale(1.05);
+        }
+
+        .popular-tag {
+            position: absolute;
+            top: -16px;
+            right: 24px;
+            background: var(--accent);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 9999px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .pricing-card h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--dark);
+        }
+
+        .price {
+            font-size: 52px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 24px;
+        }
+
+        .price span {
+            font-size: 18px;
+            font-weight: 400;
+            color: #6B7280;
+            display: block;
+            margin-top: 8px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .pricing-features li {
+            padding: 12px 0;
+            font-size: 16px;
+            color: #4B5563;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .pricing-features li i.fa-check {
+            color: var(--success);
+        }
+
+        .pricing-features li i.fa-times {
+            color: #EF4444;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+
+        .testimonial-card .quote {
+            font-style: italic;
+            font-size: 16px;
+            color: #4B5563;
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        .testimonial-card .quote::before {
+            content: '"';
+            font-size: 80px;
+            color: var(--primary);
+            opacity: 0.15;
+            position: absolute;
+            top: -20px;
+            left: 8px;
+        }
+
+        .author {
+            display: flex;
             align-items: center;
         }
-        
-        .content-locker-container {
-            background-color: white;
-            border-radius: 10px;
-            padding: 20px;
-            max-width: 90%;
-            max-height: 90vh;
-            overflow-y: auto;
+
+        .author img {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            margin-right: 16px;
+            object-fit: cover;
+            border: 2px solid var(--primary);
+        }
+
+        .author-info h4 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .author-info p {
+            font-size: 14px;
+            color: #6B7280;
+        }
+
+        /* FAQ Section */
+        .faq {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 16px;
+            border: 1px solid #E5E7EB;
+            border-radius: 12px;
+            overflow: hidden;
+            background: white;
+        }
+
+        .faq-question {
+            padding: 24px;
+            font-weight: 600;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: #F9FAFB;
+        }
+
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: #F9FAFB;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 24px;
+            max-height: 300px;
+        }
+
+        .faq-answer p {
+            font-size: 16px;
+            color: #4B5563;
+        }
+
+        /* Profit Example Section */
+        .profit-example {
+            background: white;
+            border-radius: 16px;
+            padding: 48px;
+            margin: 48px auto;
+            max-width: 900px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
             text-align: center;
         }
-        
-        .close-locker {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            color: white;
-            font-size: 24px;
-            cursor: pointer;
+
+        .profit-example h3 {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 24px;
         }
-        
-        .legal-text {
-            font-size: 11px;
-            color: var(--roblox-light-text);
-            line-height: 1.6;
-            margin-top: 20px;
-            padding: 0 10px;
-        }
-        
-        /* Footer */
-        .footer {
-            background-color: white;
-            padding: 30px 0 20px;
-            border-top: 1px solid var(--roblox-border);
-        }
-        
-        .footer-container {
-            width: 95%;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 10px;
-        }
-        
-        .footer-links {
+
+        .profit-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin-bottom: 25px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin: 32px 0;
         }
-        
-        .footer-column h3 {
-            font-size: 15px;
+
+        .profit-item {
+            background: #F3F4F6;
+            padding: 24px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .profit-item:hover {
+            background: #E5E7EB;
+        }
+
+        .profit-item h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--secondary);
             margin-bottom: 12px;
-            color: var(--roblox-text);
         }
-        
+
+        .profit-item p {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .profit-total {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--success);
+            margin: 24px 0;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 80px 0 32px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-column h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: var(--light);
+        }
+
         .footer-column ul {
             list-style: none;
         }
-        
-        .footer-column li {
-            margin-bottom: 8px;
+
+        .footer-column ul li {
+            margin-bottom: 12px;
         }
-        
-        .footer-column a {
+
+        .footer-column ul li a {
+            color: #9CA3AF;
             text-decoration: none;
-            color: var(--roblox-light-text);
-            font-size: 13px;
-            transition: color 0.2s;
+            font-size: 16px;
+            transition: color 0.3s ease;
         }
-        
-        .footer-column a:hover {
-            color: var(--roblox-blue);
+
+        .footer-column ul li a:hover {
+            color: white;
         }
-        
-        .footer-bottom {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            padding-top: 20px;
-            border-top: 1px solid var(--roblox-border);
-            font-size: 11px;
-            color: var(--roblox-light-text);
+
+        .footer-column ul li a i {
+            margin-right: 8px;
         }
-        
-        /* Responsive Styles */
-        @media (min-width: 576px) {
-            .nav-container {
-                gap: 20px;
-            }
-            
-            .nav-left {
-                gap: 25px;
-            }
-            
-            .nav-search {
-                order: 2;
-                width: auto;
-                flex-grow: 1;
-                margin: 0 20px;
-                max-width: 400px;
-            }
-            
-            .nav-right {
-                order: 3;
-            }
-            
+
+        .copyright {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid #4B5563;
+            color: #9CA3AF;
+            font-size: 14px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 1024px) {
             .hero h1 {
-                font-size: 32px;
+                font-size: 48px;
             }
-            
-            .footer-links {
-                grid-template-columns: repeat(3, 1fr);
+
+            .hero p {
+                font-size: 20px;
+            }
+
+            .section-title h2 {
+                font-size: 36px;
+            }
+
+            .ebook-section {
+                flex-direction: column;
+                gap: 32px;
+            }
+
+            .ebook-mockup, .ebook-content {
+                width: 100%;
+            }
+
+            .profit-grid {
+                grid-template-columns: 1fr;
             }
         }
-        
-        @media (min-width: 768px) {
-            .mobile-menu-toggle {
-                display: none;
-            }
-            
-            .nav-links {
-                display: flex;
-                gap: 20px;
-            }
-            
+
+        @media (max-width: 768px) {
             .hero h1 {
-                font-size: 40px;
+                font-size: 36px;
             }
-            
+
             .hero p {
                 font-size: 18px;
             }
-            
-            .table-header {
-                display: flex;
-                background-color: var(--roblox-gray);
-                padding: 15px 20px;
-                border-bottom: 1px solid var(--roblox-border);
-                font-weight: 500;
+
+            .section-title h2 {
+                font-size: 32px;
             }
-            
-            .table-row {
-                flex-direction: row;
-                align-items: center;
-                gap: 0;
-                padding: 15px 20px;
+
+            .countdown {
+                flex-direction: column;
+                gap: 12px;
             }
-            
-            .col-price, .col-mobile, .col-web {
-                flex: 1;
-                text-align: left;
-            }
-            
-            .col-mobile {
-                text-align: center;
-            }
-            
-            .col-web {
-                text-align: center;
-            }
-            
-            .col-mobile::before, .col-web::before {
-                content: none;
-            }
-            
-            .premium-header {
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-            }
-            
-            .premium-features {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .footer-links {
-                grid-template-columns: repeat(4, 1fr);
-            }
-            
-            .footer-bottom {
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-            }
-        }
-        
-        @media (min-width: 992px) {
-            .premium-features {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            
-            .footer-links {
-                grid-template-columns: repeat(5, 1fr);
+
+            .pricing-card.popular {
+                transform: scale(1);
             }
         }
     </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <button class="mobile-menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <div class="nav-left">
-                <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/c/2/f/c2fc0404eeb8d393407bdaebe2cc9994a8953550.png" alt="Roblox Logo" class="logo">
-                <div class="nav-links">
-                    <a href="#">Discover</a>
-                    <a href="#">Marketplace</a>
-                    <a href="#">Create</a>
-                    <a href="#">Robux</a>
-                </div>
-            </div>
-            
-            <div class="nav-search">
-                <i class="fas fa-search"></i>
-                <input type="text" placeholder="Search">
-            </div>
-            
-            <div class="nav-right">
-                <a href="#" class="nav-btn btn-login">Log In</a>
-                <a href="#" class="nav-btn btn-signup">Sign Up</a>
-            </div>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">Social<span>Resell</span>Pro</div>
+            <a href="#pricing" class="cta-button">Enroll Now</a>
         </div>
-    </nav>
+    </header>
     
-    <!-- Main Content -->
-    <main class="main-container">
-        <div class="hero">
-            <h1>Enjoy up to 100% <br> more Robux</h1>
-            <p>Get more Robux on computer, web, and with gift cards</p>
-        </div>
-        
-        <!-- Pricing Table -->
-        <div class="pricing-table">
-            <div class="table-header">
-                <div class="col-price">Price</div>
-                <div class="col-mobile">Mobile & console <i class="fas fa-info-circle" title="Standard rate"></i></div>
-                <div class="col-web">Computer, web & gift cards <i class="fas fa-info-circle" title="Bonus rate"></i></div>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Master Reselling Instagram & TikTok Followers, Likes and Views in 2025</h1>
             
-            <div class="table-row">
-                <div class="col-price">$0</div>
-                <div class="col-mobile">
-                    <span class="robux-amount">
-                        <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/c/2/f/c2fc0404eeb8d393407bdaebe2cc9994a8953550.png" alt="Robux" class="robux-icon"> 22,500
-                    </span>
-                </div>
-                <div class="col-web">
-                    <span class="web-option">
-                        <span class="robux-amount" data-amount="24000">
-                            <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/c/2/f/c2fc0404eeb8d393407bdaebe2cc9994a8953550.png" alt="Robux" class="robux-icon"> 24,000
-                        </span>
-                    </span>
-                    <span class="bonus-badge">+ 1,500 more</span>
-                </div>
-            </div>
+            <a href="#pricing" class="cta-button">Get Started Today</a>
             
-            <div class="table-row">
-                <div class="col-price">$0</div>
-                <div class="col-mobile">
-                    <span class="robux-amount">
-                        <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/c/2/f/c2fc0404eeb8d393407bdaebe2cc9994a8953550.png" alt="Robux" class="robux-icon"> 10,000
-                    </span>
-                </div>
-                <div class="col-web">
-                    <span class="web-option">
-                        <span class="robux-amount" data-amount="11000">
-                            <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/c/2/f/c2fc0404eeb8d393407bdaebe2cc9994a8953550.png" alt="Robux" class="robux-icon"> 11,000
-                        </span>
-                    </span>
-                    <span class="bonus-badge">+ 1,000 more</span>
-                </div>
-            </div>
-            
-            <div class="table-row">
-                <div class="col-price">$0</div>
-                <div class="col-mobile">
-                    <span class="robux-amount">
-                        <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/c/2/f/c2fc0404eeb8d393407bdaebe2cc9994a8953550.png" alt="Robux" class="robux-icon"> 4,500
-                    </span>
-                </div>
-                <div class="col-web">
-                    <span class="web-option">
-                        <span class="robux-amount" data-amount="5250">
-                            <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/c/2/f/c2fc0404eeb8d393407bdaebe2cc9994a8953550.png" alt="Robux" class="robux-icon"> 5,250
-                        </span>
-                    </span>
-                    <span class="bonus-badge">+ 750 more</span>
-                </div>
-            </div>
-            
-            <div class="table-row">
-                <div class="col-price">$0</div>
-                <div class="col-mobile">
-                    <span class="robux-amount">
-                        <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/c/2/f/c2fc0404eeb8d393407bdaebe2cc9994a8953550.png" alt="Robux" class="robux-icon"> 1,700
-                    </span>
-                </div>
-                <div class="col-web">
-                    <span class="web-option">
-                        <span class="robux-amount" data-amount="2000">
-                            <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/c/2/f/c2fc0404eeb8d393407bdaebe2cc9994a8953550.png" alt="Robux" class="robux-icon"> 2,000
-                        </span>
-                    </span>
-                    <span class="bonus-badge">+ 300 more</span>
-                </div>
-            </div>
-            
-            <div class="table-row">
-                <div class="col-price">$0</div>
-                <div class="col-mobile">
-                    <span class="robux-amount">
-                        <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/c/2/f/c2fc0404eeb8d393407bdaebe2cc9994a8953550.png" alt="Robux" class="robux-icon"> 800
-                    </span>
-                </div>
-                <div class="col-web">
-                    <span class="web-option">
-                        <span class="robux-amount" data-amount="1000">
-                            <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/c/2/f/c2fc0404eeb8d393407bdaebe2cc9994a8953550.png" alt="Robux" class="robux-icon"> 1,000
-                        </span>
-                    </span>
-                    <span class="bonus-badge">+ 200 more</span>
-                </div>
-            </div>
-            
-            <div class="table-row">
-                <div class="col-price">$0</div>
-                <div class="col-mobile">
-                    <span class="robux-amount">
-                        <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/c/2/f/c2fc0404eeb8d393407bdaebe2cc9994a8953550.png" alt="Robux" class="robux-icon"> 400
-                    </span>
-                </div>
-                <div class="col-web">
-                    <span class="web-option">
-                        <span class="robux-amount" data-amount="500">
-                            <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/c/2/f/c2fc0404eeb8d393407bdaebe2cc9994a8953550.png" alt="Robux" class="robux-icon"> 500
-                        </span>
-                    </span>
-                    <span class="bonus-badge">+ 100 more</span>
-                </div>
+            <div class="countdown" id="countdown">
+                <p>🚀 Make $100 a Day by Reselling Followers</p>
             </div>
         </div>
-        
-        <!-- Premium Section -->
-        <div class="premium-card">
-            <div class="premium-header">
-                <h2 class="premium-title">Roblox Premium 450</h2>
-                <div class="premium-price">$4.99/month</div>
+    </section>
+    
+    <!-- Instagram Followers Reselling Section -->
+    <section class="section">
+        <div class="container">
+            <!-- <div class="section-title">
+                <h2>🚀 Make $100 a Day by Reselling Instagram Followers</h2>
+                <p>The Complete Guide to Starting and Making Money with Social Media Services</p>
+            </div> -->
+            
+            <div class="profit-example">
+                <h3>Real Profit Example</h3>
+                <p>Learn how to build a high-profit business with up to 95% profit margins, even with a low budget in startup costs!</p>
+                
+                <div class="profit-grid">
+                    <div class="profit-item">
+                        <h4>Offer</h4>
+                        <p>10K Instagram Followers</p>
+                    </div>
+                    <div class="profit-item">
+                        <h4>Sell Price</h4>
+                        <p>$49.99</p>
+                    </div>
+                    <div class="profit-item">
+                        <h4>Buy Price</h4>
+                        <p>$14</p>
+                    </div>
+                </div>
+                
+                <div class="profit-total">
+                    Your Profit: $49.99 - $14 = $35.99 per sale
+                </div>
+                
+                <!-- <p>Just 3 sales per day = $107 daily profit!</p> -->
             </div>
             
-            <p class="premium-desc">
-                Get a 450 Robux monthly stipend and 10% more Robux when you buy Robux on the web, plus access to our trading feature and the ability to sell items!
-            </p>
+            <!-- <div class="features">
+                <div class="feature-card">
+                    <i class="fas fa-search-dollar"></i>
+                    <h3>Source & Resell</h3>
+                    <p>Find out where and how to buy services (followers, likes, views) at cheap prices and resell them for high profits</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Professional Website</h3>
+                    <p>Create a professional website with payment methods (100% free setup)</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-ad"></i>
+                    <h3>Paid Traffic</h3>
+                    <p>Access paid traffic starting at just $1 (with high conversion strategies)</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Target Markets</h3>
+                    <p>Discover the best countries to sell your services in for maximum profits</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Sales Conversion</h3>
+                    <p>Learn how to talk to customers and convince them to buy from you</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Professional Designs</h3>
+                    <p>Design professional posts using Canva (free account setup)</p>
+                </div>
+            </div> -->
             
-            <div class="premium-features">
-                <div class="feature-item">
-                    <i class="fas fa-gem feature-icon"></i>
-                    <span>450 Robux every month</span>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-percentage feature-icon"></i>
-                    <span>10% bonus when buying Robux</span>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-store feature-icon"></i>
-                    <span>Sell items and clothing</span>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-exchange-alt feature-icon"></i>
-                    <span>Trade items with friends</span>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-tag feature-icon"></i>
-                    <span>Premium-only items</span>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-user-plus feature-icon"></i>
-                    <span>Premium server slots</span>
-                </div>
+            <div class="profit-example" style="background-color: #F0F8FF;">
+                <h3>🔥 Just 3 sales per day = $107 daily profit!
+
+</h3>
+                <!-- <p>Use free traffic and keep up to 95% of your earnings!</p>
+                <p>The 5% discount only applies to the service purchase price — you control the resale price and the profit you make!</p> -->
             </div>
-            
-            <button class="btn-premium">Subscribe to Premium</button>
         </div>
-        
-        <p class="legal-text">
-            *Robux may take up to 24 hours to appear in your account. Bonus Robux are awarded for purchases made on computer, web, and gift cards. Mobile and console purchases do not qualify for bonus Robux. Robux purchases are non-refundable. By clicking "Buy", you agree to our Terms of Use and acknowledge you have read our Privacy Policy.
-        </p>
-    </main>
+    </section>
+    
+    <!-- Course Description -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <!-- <h2>Turn Social Media Into Your Personal ATM</h2>
+                <p>Ready to tap into the booming social media services industry and start earning $100+/day — even with zero experience?</p>
+            --> </div> 
+            
+            <div class="ebook-section">
+                <div class="ebook-mockup">
+                    <img src="https://i.postimg.cc/zG13WxZJ/1749594663.png" alt="Social Media Reselling Ebook">
+                </div>
+                <div class="ebook-content">
+                    <h3>What's Inside The Ebook:</h3>
+                    <ul class="chapter-list">
+                        <li>Build a Free Professional Website with Payment Integration</li>
+                        <li>Create High-Quality Professional Posts</li>
+                        <li>Design Professional Posts Using Canva</li>
+                        <li>Develop a Professional Instagram Page to Attract Traffic</li>
+                        <li>Generate Free Traffic Effectively</li>
+                        <li>Access Paid Traffic Starting at $1</li>
+                        <li>Identify Top Countries for Selling Services</li>
+                        <li>Source Affordable Services for Resale</li>
+                        <li>Engage and Persuade Customers Effectively</li>
+                        <li>Estimate Your Potential Earnings</li>
+                        <li>Achieve 90% Profit Using Free Traffic</li>
+                        <li>Understand the 10% Discount on Service Purchase Prices</li>
+                        <li>Resell Services at Your Desired Price After Purchase</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Proven Business Model</h3>
+                    <p>Learn how this business model works and why it's still highly profitable in 2025 with real case studies.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Complete Setup Guide</h3>
+                    <p>From finding reliable providers to creating your professional reselling website - we cover everything.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Traffic & Sales</h3>
+                    <p>Get clients with both free and paid traffic methods that actually work in today's competitive market.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- What You'll Learn -->
+    <section class="section" style="background-color: #F3F4F6;">
+        <div class="container">
+            <div class="section-title">
+                <h2>What You'll Learn</h2>
+                <p>This comprehensive course covers everything you need to launch and scale your social media reselling business</p>
+            </div>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Business Fundamentals</h3>
+                    <p>How this business model works (And why it still works in 2025), finding cheap & reliable providers, pricing strategies.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Website Creation</h3>
+                    <p>How to create a professional reselling website 100% FREE with our templates and step-by-step guides.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Client Acquisition</h3>
+                    <p>Free traffic methods (Instagram, TikTok, Reddit, SEO) and paid traffic (Facebook/IG Ads, Google Ads, Influencers).</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-cog"></i>
+                    <h3>Operations</h3>
+                    <p>How to handle orders, deliver services, keep customers happy, and withdraw your profits easily.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-level-up-alt"></i>
+                    <h3>Scaling Up</h3>
+                    <p>Advanced strategies to grow to $1,000+/month fast with real case studies and bonus scaling tips.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-gift"></i>
+                    <h3>Bonus Materials</h3>
+                    <p>Website templates, traffic scripts, top reseller sites list, and access to our private community of successful resellers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Choose Your Plan</h2>
+                <p>Select the package that fits your needs and start your reselling business today</p>
+            </div>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price">$9.99 <span>one-time payment</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Full E-Book Course</li>
+                        <li><i class="fas fa-check"></i> Basic Setup Guide</li>
+                        <li><i class="fas fa-times"></i> Provider List</li>
+                        <li><i class="fas fa-times"></i> Email Support</li>
+                        <li><i class="fas fa-times"></i> Video Tutorials</li>
+                        <li><i class="fas fa-times"></i> Live Support</li>
+                        <li><i class="fas fa-times"></i> Store Setup</li>
+                    </ul>
+                    <a href="https://www.paypal.com/ncp/payment/EW9TU59ENQ82A" class="cta-button">Get Started</a>
+                </div>
+                
+                <div class="pricing-card popular">
+                    <div class="popular-tag">MOST POPULAR</div>
+                    <h3>Premium</h3>
+                    <div class="price">$99.99 <span>one-time payment</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Everything in Starter</li>
+                        <li><i class="fas fa-check"></i> Full Video Tutorials</li>
+                        <li><i class="fas fa-check"></i> Live Call Record Support</li>
+                        <li><i class="fas fa-check"></i> Advanced Traffic Methods</li>
+                        <li><i class="fas fa-check"></i> Scaling Strategies</li>
+                        <li><i class="fas fa-times"></i> Store Setup</li>
+                        <li><i class="fas fa-times"></i> Branding Package</li>
+                    </ul>
+                    <a href="https://www.paypal.com/ncp/payment/EG6B3JTDBSUGG" class="cta-button">Get Premium</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>VIP</h3>
+                    <div class="price">$249.99 <span>one-time payment</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Everything in Premium</li>
+                        <li><i class="fas fa-check"></i> Full Store Setup</li>
+                        <li><i class="fas fa-check"></i> Custom Domain Name</li>
+                        <li><i class="fas fa-check"></i> Brand Name & Logo</li>
+                        <li><i class="fas fa-check"></i> Instagram Page Setup</li>
+                        <li><i class="fas fa-check"></i> Pre-loaded Products</li>
+                        <li><i class="fas fa-check"></i> 1-on-1 Strategy Call</li>
+                    </ul>
+                    <a href="https://www.paypal.com/ncp/payment/CXZT9XTRGC9SJ" class="cta-button">Go VIP</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Success Stories</h2>
+                <p>Hear from our students who've transformed their income with this system</p>
+            </div>
+            
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <div class="quote">
+                        "I went from zero to making $150/day within 4 Days of taking this course. The step-by-step instructions made it so easy to get started. Best investment I've ever made!"
+                    </div>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah J.">
+                        <div class="author-info">
+                            <h4>Sarah J.</h4>
+                            <p>Former College Student</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote">
+                        "The VIP package was worth every penny. Having my store set up for me saved me weeks of trial and error. I made back my investment in the first 3 days!"
+                    </div>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Marcus T.">
+                        <div class="author-info">
+                            <h4>Marcus T.</h4>
+                            <p>Freelance Designer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote">
+                        "I was skeptical at first but the traffic methods actually work. I'm getting 10-15 orders daily just from TikTok without spending a dime on ads. This course is gold!"
+                    </div>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya K.">
+                        <div class="author-info">
+                            <h4>Priya K.</h4>
+                            <p>Stay-at-Home Mom</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know before getting started</p>
+            </div>
+            
+            <div class="faq">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do I need any experience to start?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely not! This course is designed for complete beginners. We'll walk you through every step from setting up your business to making your first sales.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How soon can I expect to make money?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Many of our students make their first sale within 48 hours of completing the course. With consistent implementation, most reach $100/day within 2-4 weeks.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is this business still profitable in 2025?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! The demand for social media growth services continues to increase. We've updated all strategies to work with 2025 algorithms and platform changes.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept all major credit cards, PayPal, and cryptocurrency. Your purchase is 100% secure.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is there a money-back guarantee?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer a 30-day money-back guarantee if you don't make at least one sale after implementing our strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="section" style="background: var(--gradient); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 44px; font-weight: 800; margin-bottom: 24px;">Ready to Start Your Social Media Reselling Business?</h2>
+            <p style="font-size: 22px; font-weight: 300; margin-bottom: 32px; max-width: 800px; margin-left: auto; margin-right: auto;">Join thousands of students who are now making money online with this proven system. Enroll today and get instant access!</p>
+            <a href="#pricing" class="cta-button" style="background: var(--accent); font-size: 18px; padding: 16px 48px;">Get Instant Access Now</a>
+        </div>
+    </section>
     
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-links">
+    <footer>
+        <div class="container">
+            <div class="footer-content">
                 <div class="footer-column">
-                    <h3>About Us</h3>
-                    <ul>
-                        <li><a href="#">About Roblox</a></li>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Parents</a></li>
-                        <li><a href="#">Gift Cards</a></li>
-                    </ul>
+                    <h3>SocialResellPro</h3>
+                    <p>Teaching beginners how to build profitable online businesses since 2022. Over 12,000 students served worldwide.</p>
                 </div>
                 
                 <div class="footer-column">
-                    <h3>Resources</h3>
+                    <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Creator Dashboard</a></li>
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#">Safety</a></li>
-                        <li><a href="#">Community Standards</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Features</h3>
-                    <ul>
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">Avatar Shop</a></li>
-                        <li><a href="#">Robux</a></li>
-                        <li><a href="#">Premium</a></li>
-                        <li><a href="#">Developer Hub</a></li>
+                        
+                        <li><a href="#pricing">Pricing</a></li>
+                        
                     </ul>
                 </div>
                 
                 <div class="footer-column">
                     <h3>Support</h3>
                     <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="https://wa.me/31637630250">Contact Us</a></li>
+                       
                     </ul>
                 </div>
                 
                 <div class="footer-column">
                     <h3>Follow Us</h3>
                     <ul>
-                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                        <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
-                        <li><a href="#"><i class="fab fa-tiktok"></i> TikTok</a></li>
+                        <li><a href="https://www.instagram.com/anezom.1/"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        
                     </ul>
                 </div>
             </div>
             
-            <div class="footer-bottom">
-                <div>©2024 Roblox Corporation. All rights reserved.</div>
-                <div>Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.</div>
+            <div class="copyright">
+                <p>© 2025 SocialResellPro. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-    
-    <!-- Content Locker Modal -->
-    <div class="content-locker-modal" id="contentLockerModal">
-        <span class="close-locker">&times;</span>
-        <div class="content-locker-container" id="contentLockerContainer">
-            <h3>Complete Offer to Get <span id="selectedRobuxAmount">0</span> Robux</h3>
-            <p>Please complete one of the offers below to receive your Robux:</p>
-            <div id="contentLockerScript"></div>
-        </div>
-    </div>
-    
+
     <script>
-        // Simple interactivity
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile menu toggle
-            const mobileToggle = document.querySelector('.mobile-menu-toggle');
-            const navLinks = document.querySelector('.nav-links');
-            
-            if (mobileToggle && navLinks) {
-                mobileToggle.addEventListener('click', () => {
-                    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    otherItem.classList.remove('active');
                 });
-            }
-            
-            // Add hover effect to pricing rows
-            const rows = document.querySelectorAll('.table-row');
-            rows.forEach(row => {
-                row.addEventListener('mouseenter', () => {
-                    row.style.backgroundColor = '#f8f9fa';
-                });
-                row.addEventListener('mouseleave', () => {
-                    row.style.backgroundColor = 'white';
-                });
-            });
-            
-            // Premium button click
-            const premiumBtn = document.querySelector('.btn-premium');
-            if (premiumBtn) {
-                premiumBtn.addEventListener('click', () => {
-                    alert('Premium subscription would be processed here in a real implementation.');
-                });
-            }
-            
-            // Handle window resize to ensure proper menu display
-            window.addEventListener('resize', function() {
-                if (window.innerWidth >= 768 && navLinks) {
-                    navLinks.style.display = 'flex';
-                } else if (navLinks) {
-                    navLinks.style.display = 'none';
+                
+                if (!isActive) {
+                    item.classList.add('active');
                 }
             });
-            
-            // Content Locker Implementation
-            const robuxAmounts = document.querySelectorAll('.robux-amount');
-            const contentLockerModal = document.getElementById('contentLockerModal');
-            const contentLockerContainer = document.getElementById('contentLockerContainer');
-            const selectedRobuxAmount = document.getElementById('selectedRobuxAmount');
-            const closeLocker = document.querySelector('.close-locker');
-            
-            // Add click event to all robux amounts
-            robuxAmounts.forEach(amount => {
-                amount.addEventListener('click', function() {
-                    // Get the robux amount from data attribute or text
-                    const robuxValue = this.getAttribute('data-amount') || 
-                                      this.textContent.replace(/\D/g, '');
-                    
-                    // Show the selected amount in the modal
-                    selectedRobuxAmount.textContent = robuxValue;
-                    
-                    // Show the modal
-                    contentLockerModal.style.display = 'flex';
-                    
-                    // Load the content locker script
-                    loadContentLocker();
-                });
-            });
-            
-            // Close modal when clicking X
-            closeLocker.addEventListener('click', function() {
-                contentLockerModal.style.display = 'none';
-            });
-            
-            // Close modal when clicking outside
-            contentLockerModal.addEventListener('click', function(e) {
-                if (e.target === contentLockerModal) {
-                    contentLockerModal.style.display = 'none';
-                }
-            });
-            
-            // Function to load content locker script
-            function loadContentLocker() {
-                // Clear previous content
-                document.getElementById('contentLockerScript').innerHTML = '';
-                
-                // Create script element
-                const script = document.createElement('script');
-                script.type = 'text/javascript';
-                script.innerHTML = 'var CwJua_Mrm_btykYc={"it":4507084,"key":"52869"};';
-                document.getElementById('contentLockerScript').appendChild(script);
-                
-                // Create second script element
-                const script2 = document.createElement('script');
-                script2.src = 'https://dlk457skl57zp.cloudfront.net/7b17fc5.js';
-                script2.onload = function() {
-                    // Call the locker function after script loads
-                    if (typeof _bu === 'function') {
-                        _bu();
-                    }
-                };
-                document.getElementById('contentLockerScript').appendChild(script2);
-            }
         });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Countdown Timer
+        function startCountdown() {
+            const endDate = new Date();
+            endDate.setDate(endDate.getDate() + 3); // 3 days from now
+            
+            function updateTimer() {
+                const now = new Date();
+                const timeLeft = endDate - now;
+                
+                if (timeLeft <= 0) {
+                    document.getElementById('timer').textContent = 'Expired';
+                    return;
+                }
+                
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+                
+                document.getElementById('timer').textContent = 
+                    `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }
+            
+            updateTimer();
+            setInterval(updateTimer, 1000);
+        }
+
+        startCountdown();
     </script>
 </body>
 </html>
